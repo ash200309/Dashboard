@@ -6,7 +6,7 @@ PASSWORD = st.secrets["PASSWORD"]
 # Power BI report embed URL
 POWERBI_EMBED_URL = st.secrets["POWERBI_EMBED_URL"]
 
-st.title("Secure Power BI Dashboard Viewer")
+st.title("Shopclues Data Dashboard")
 
 # Password input field
 password = st.text_input("Enter password to access the dashboard:", type="password")
