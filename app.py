@@ -1,13 +1,10 @@
 import streamlit as st
 import os
-from dotenv import load_dotenv
 
-load_dotenv()
-
-PASSWORD = os.getenv("PASSWORD")
+PASSWORD = st.secrets["PASSWORD"]
 
 # Power BI report embed URL
-POWERBI_EMBED_URL = os.getenv("POWERBI_EMBED_URL")
+POWERBI_EMBED_URL = st.secrets["POWERBI_EMBED_URL"]
 
 st.title("Secure Power BI Dashboard Viewer")
 
